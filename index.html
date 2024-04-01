@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+<div id="main-heading">
+    <h1 class="text-center font-main">Registration Form</h1>
+    <h3 class="text-center font-second ">Fill out the form carefuly for registration</h3>
+</div>
+    <form>
+        <div id="first-section">
+            <div id="f-section">
+                <h3 class="form-upper-text">Student Name</h3>
+                <input type="text" id="fName" ><br>
+                <label for="fName">First Name</label>
+            </div>
+              <div id="l-section">
+                <input type="text" id="lName" ><br>
+                <label for="lName">Last Name</label>
+              </div>
+        </div>
+        <div id="second-section">
+        <div id="gender-section">
+        <h3 class="form-upper-text">Gender</h3>
+            <select value="">
+                <option value="">Please Select</option>
+                <option name="" id="">Male</option>
+                <option name="" id="">Female</option>
+            </select>
+        </div>
+            <div id="email-section">
+                <h3 class="form-upper-text">Student E-mail</h3>
+                <input type="email" id="email" placeholder="example@gmail.com">
+            </div>
+    </div>       
+
+
+    <div id="third-section">
+
+        <div id="id-section">
+            <h3 class="form-upper-text">Student ID</h3>
+            <input type="text" id="studentID">
+        </div>
+     <div id="select-class">
+        <h3 class="form-upper-text">List of Classes</h3>
+        <select id="classSelect">
+            <option value="">Please Select</option>
+            <option value="B.a" id="">B.a</option>
+            <option value="Bsc" id="">Bsc</option>
+            <option value="Bcom" id="">Bcom</option>
+        </select>
+    </div>
+</div>
+<button type="submit" id="submit">Submit</button>
+</form>
+</div>
+<div id="register-box">
+    <div class="register-model animate__animated animate__zoomIn animate__faster" >
+        <button onclick="onClick()">
+            <i class="fa-solid fa-rectangle-xmark" id="icon-close"></i>
+        </button>
+        <i class="fa-solid fa-circle-check" id="icon-check"></i>
+        <h1>Registeration Successful !</h1>
+    </div>
+</div>
+   <script src="script.js"></script>
+    
+</body>
+</html>
